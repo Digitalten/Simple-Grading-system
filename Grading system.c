@@ -1,23 +1,22 @@
 #include <stdio.h>
-int main(){
 
-    float numero;
-    printf("\n\nPlease enter a number between 0 and 10:\n");
-    scanf("%f", &numero);
-    if (numero < 0 || numero > 10) {
-        printf("\nOps! Maybe you got it wrong!\n please enter a number between 0 and 10.");
+int main() {
+    float number = 0;
 
+    do {
+    printf("Please enter a number between 0 and 10:\n");
+    scanf("%f", &number);
+
+    if (number < 0 || number > 10) {
+        printf("\nOps! Maybe you got it wrong!\n");
     }
-
-    else if (numero >= 5) {
-        printf("\nCongrats, you passed!");
+    else if (number >= 5) {
+        printf("\nCongrats, you passed!\n");
     }
-
     else {
-        printf("\nWhat a shame, you did not pass.\nBut do not worry, you can always try again!\n");
-
+        printf("\nWhat a shame, you did not pass.\nBut do not worry, you can always try again!\n\n");
     }
-
+    } while (number < 0 || number > 10 || number < 5);
+    
     return 0;
-
 }
