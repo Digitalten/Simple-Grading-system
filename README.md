@@ -1,21 +1,13 @@
-# Simple-Grading-system
-C program that checks whether the student passed based on the grade entered.
+# Grading System in C
 
-# Grade Checker in C
-
-Simple program in C that analyzes the user's grade and informs whether he passed or failed.
+Simple program written in C that asks the user for a number between 0 and 10 and determines whether they passed or failed.
 
 ## Features
-- Grade entry (0 to 10)
-- Invalid value validation
-- Pass/fail check
+- Input validation (0 to 10 range)
+- Repeats until the user passes
+- Basic error handling for invalid inputs
 
-## Technologies
-- C language
+## How to run
 
-## How to execute
-1. Compile:
-   gcc notes.c -o notes
-
-2. Run:
-   ./notes
+gcc grading_system.c -o grading
+./grading
