@@ -17,6 +17,9 @@ int main() {
         printf("\nWhat a shame, you did not pass.\nBut do not worry, you can always try again!\n\n");
     }
     } while (number < 0 || number > 10 || number < 5);
+
+    getchar();
+    getchar();
     
     return 0;
 }
