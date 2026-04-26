@@ -12,3 +12,7 @@ Simple program written in C that asks the user for a number between 0 and 10 and
 ```
 gcc grading_system.c -o grading
 ./grading
+
+```
+## Technologies
+- C
